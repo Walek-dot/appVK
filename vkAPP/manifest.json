@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "VK music keaper",
+    "version": "1.0",
+    "description": "my fierst app",
+    "icons": {
+        "128": "photo-128.png",
+        "48": "photo-48.png",
+        "16": "photo-16.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "<all_urls>" ],
+            "js": [ "app.js" ]
+        }
+    ]
+ }
