@@ -4,14 +4,20 @@
     "version": "1.0",
     "description": "my fierst app",
     "icons": {
-        "128": "photo-128.png",
-        "48": "photo-48.png",
-        "16": "photo-16.png"
+        "128": "128_icon.png",
+        "48": "48_icon.png",
+        "16": "16_icon.png"
     },
     "content_scripts": [
         {
             "matches": [ "https://*.vk.com/*" ],
-            "js": [ "app.js" ]
+            "js": ["jquery-3.6.1.min.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [ "https://*.vk.com/*" ],
+            "js": ["app.js"],
+            "run_at": "document_end"
         }
     ]
- }
+ } 
